@@ -1,0 +1,48 @@
+body{
+	background: #fff;
+	margin: 0;
+}
+
+.wrapper{
+	margin: 75px auto;
+	background: #fff;
+	width: 800px;
+}
+
+.main{
+	margin: 0 auto;
+	background: #B0E9D7;
+	border-radius: 45px;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+	width: 800px;
+}
+
+.main ul{
+	position: absolute;
+	left: 0;
+	height: 767px;
+	width: 4096px;
+	transition: left 0.7s ease-in-out 0.2s;
+}
+
+.main li{
+	float: left;
+}
+
+.previousBtn{
+	position: absolute;
+	left: 3px;
+	top: 280px;
+	cursor: pointer;
+	height: 50px;
+}
+
+.nextBtn{
+	position: absolute;
+	right: 3px;
+	top: 280px;
+	cursor: pointer;
+	height: 50px;
+}
