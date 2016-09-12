@@ -1,0 +1,29 @@
+div{
+	background: #a8cf45;
+	display: inline-block;
+	font-family: 'Arial';
+	font-weight: bolder;
+	margin: 20px;
+	padding: 15px 30px;
+	text-align: center;
+	vertical-align: middle;
+	width: 80px;
+}
+
+.esquina_pagina{
+	-webkit-transform: translateX(0);
+}
+.esquina_pagina:before{
+	-webkit-transition-duration: 0.3s;
+	background: -webkit-linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
+	bottom: 0;
+	content: '';
+	height: 0;
+	left: 0;
+	position: absolute;
+	width: 0;
+}
+.esquina_pagina:hover:before{
+	height: 35px;
+	width: 35px;
+}

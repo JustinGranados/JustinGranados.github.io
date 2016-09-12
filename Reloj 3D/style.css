@@ -1,0 +1,137 @@
+body{
+	color: #fff;
+	font-family: Helvetica;
+	background: #292929;
+}
+
+#content{
+	text-align: center;
+	width: 100%;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: perspective(6000px);
+}
+
+.rueda{
+	margin: 250px 50px;
+	height: 150px;
+	width: 150px;
+	-webkit-transform-style: preserve-3d;
+	position: absolute;
+	top: 0px;
+}
+
+#hour1{
+	left: 0;
+}
+
+#hour2{
+	left: 160px;
+}
+
+#minute1{
+	left: 440px;
+}
+#minute2{
+	left: 600px;
+}
+
+#seconds1{
+	left: 880px;
+}
+
+#seconds2{
+	left: 1040px;
+}
+
+.card{
+	width: 150px;
+	height: 150px;
+	border-radius: 5px;
+	border: 1px solid white;
+	font-size: 5em;
+	font-weight: bolder;
+	line-height: 140px;
+	background: rgba(10,10,10,0.9);
+	position: absolute;
+}
+
+.c0{
+	-webkit-transform: rotateX(0deg) translateZ(240px);
+}
+
+.c1{
+	-webkit-transform: rotateX(36deg) translateZ(240px);
+}
+
+.c2{
+	-webkit-transform: rotateX(72deg) translateZ(240px);
+}
+
+.c3{
+	-webkit-transform: rotateX(108deg) translateZ(240px);
+}
+
+.c4{
+	-webkit-transform: rotateX(144deg) translateZ(240px);
+}
+
+.c5{
+	-webkit-transform: rotateX(180deg) translateZ(240px);
+}
+
+.c6{
+	-webkit-transform: rotateX(216deg) translateZ(240px);
+}
+
+.c7{
+	-webkit-transform: rotateX(252deg) translateZ(240px);
+}
+
+.c8{
+	-webkit-transform: rotateX(288deg) translateZ(240px);
+}
+
+.c9{
+	-webkit-transform: rotateX(324deg) translateZ(240px);
+}
+
+#seconds2{
+	-webkit-animation: giro_total 10s infinite linear;
+	-webkit-transform-style: preserve-3d;
+}
+
+@-webkit-keyframes giro_total{
+	0%, 8%{
+		-webkit-transform: rotateX(0deg);
+	}
+	10%, 18%{
+		-webkit-transform: rotateX(-36deg);
+	}
+	20%, 28%{
+		-webkit-transform: rotateX(-72deg);
+	}
+	30%, 38%{
+		-webkit-transform: rotateX(-108deg);
+	}
+	40%, 48%{
+		-webkit-transform: rotateX(-144deg);
+	}
+	50%, 58%{
+		-webkit-transform: rotateX(-180deg);
+	}
+	60%, 68%{
+		-webkit-transform: rotateX(-216deg);
+	}
+	70%, 78%{
+		-webkit-transform: rotateX(-252deg);
+	}
+	80%, 88%{
+		-webkit-transform: rotateX(-288deg);
+	}
+	90%, 98%{
+		-webkit-transform: rotateX(-324deg);
+	}
+	100%{
+		-webkit-transform: rotateX(-360deg);
+	}
+}
