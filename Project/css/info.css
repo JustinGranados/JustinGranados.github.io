@@ -1,0 +1,41 @@
+#info{
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+#info .contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.info-pet{
+	margin: 20px;
+}
+
+.info-pet img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 7px solid #fff;
+}
+
+.info-pet img:hover{
+	border: 7px solid #888;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+	.info-pet{
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	.info-pet{
+		width: auto;
+	}
+}
